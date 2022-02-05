@@ -1,5 +1,5 @@
-let time = -1; // horas validas van de 0 a 23
-let greeting;
+// let time = -1; // horas validas van de 0 a 23
+// let greeting;
 
 // if (time < 12) {
 //     greeting = "Good morning"
@@ -82,7 +82,7 @@ let greeting;
 // 	mensaje = "Under the limit";
 // }
 
-// // console.log(mensaje)
+// console.log(mensaje)
 // let tareas = [
 //     'hacer la tarea',
 //     'ir por huevo',
@@ -128,6 +128,16 @@ let greeting;
 //     ejemplo(index);
 // }
 
+// let index;
+// for (index = 0; index < 10; index++) {
+//   console.log(index)
+// }
+
+// for(let cuentaAtras = 5; cuentaAtras >= 0; cuentaAtras--){
+//     console.log(cuentaAtras)
+// }
+
+// console.log('terminado')
 // for (let index = 0; index < 10; index += 2) {
 //     ejemplo(index);
 // }
@@ -372,3 +382,327 @@ let greeting;
 
 // console.log( pluck(singers, 'born') );
 // [1948, 1950, 1967, 1964]
+
+
+// TERCERA SESION, TEMA 1
+
+// let john = {
+// 	name: 'John',
+// 	birthYear: 1990,
+// 	job: 'Developer'
+// }
+
+// let Person = function(name, birthYear, job) {
+//     this.name = name;
+//     this.birthYear = birthYear;
+//     this.job = job;
+// }
+
+// let john = new Person('John', 1990, 'Developer');
+// let mark = new Person('Mark', 1970, 'Teacher');
+// let jane = new Person('Jane', 1996, 'Designer');
+
+// console.log('Objeto,', john, mark, jane);
+
+// let Vec = function(x, y) {
+//     this.x = x;
+//     this.y = y;
+// }
+
+// let vec1 = new Vec(1, 2);
+// let vec2 = new Vec(2, 3); // vec2 = {x: 2, y: 3}
+
+// let vec3 = new Vec(4, 2);
+
+// // vec2 = {x: 2, y: 3}
+// // vec1.plus(vec2)
+// Vec.prototype.plus = function(other) {
+//     return new Vec(this.x + other.x, this.y + other.y);
+// }
+
+// Vec.prototype.minus = function(other) {
+//     return new Vec(this.x - other.x, this.y - other.y)
+// }
+
+// Vec.prototype.length = function() {
+//     return Math.sqrt(this.x * this.x + this.y * this.y)
+// }
+
+
+// console.log(vec1.plus(vec2)); // Vec { x: 3, y: 5 }
+
+
+// console.log(vec2.plus(vec1))
+// console.log(vec1.plus(vec3))
+// console.log(vec1.minus(vec2)); // Vec { x: -1, y: -1 }
+// console.log(vec1.length(vec1)); // 2.23606797749979
+
+// let Person = function(nombre) {
+//     this.nombre = nombre;
+// }
+
+// let john = new Person('John') // john = {name: 'John'}
+
+// let Developer = function(nombre, skills, yearOfExperience) {
+//     Person.call(this, nombre);
+
+//     this.skills = skills;
+//     this.yearOfExperience = yearOfExperience;
+// }
+
+// let jane = new Developer('Jane', 'FrontEnd', 10)
+
+// console.log(jane)
+
+
+// let Group = function() {
+//     this.members = []
+// }
+
+// Group.prototype.add = function(value) {
+//     if(!this.has(value)) this.members.push(value);
+// }
+
+// Group.prototype.has = function(value) {
+//     return this.members.includes(value);
+// }
+
+// Group.from = function(collection) {
+//     let group = new Group();
+//     console.log('grupo', group)
+//     for(let i = 0; i < collection.length; i++) {
+//         group.add(collection[i])
+//     }
+
+//     return group
+// }
+
+// let arrayInicial = [1, 2, 3, 4, 5]
+// let group = Group.from(arrayInicial);
+
+// console.log(group)
+// console.log(group.has(6)) // false
+// group.add(10)
+// console.log(group.has(10)) // true
+// console.log(group)
+
+// console.log(arrayInicial)
+
+// let Person = function(name, birthYear, job) {
+//     this.name = name;
+//     this.birthYear = birthYear;
+//     this.job = job;
+// }
+
+// Person.prototype.calculateAge = function() {
+//     let today = new Date();
+//     let year = today.getFullYear();
+
+//     console.log(year - this.birthYear);
+// }
+
+// let john = new Person('John', 1990, 'DEveloper');
+// let mark = new Person('Mark', 1970, 'Teacher');
+// let jane = new Person('Jane', 1994, 'DEsigner');
+
+// console.log(john)
+
+// SESION 3, TEMA 2
+
+// let numbers = [1, 2, 3, 4, 5];
+// let doubles = [];
+
+// for(let i = 0; i < numbers.length; i++) {
+// 	doubles.push(numbers[i] * 2);
+// }
+
+// console.log(numbers); // [1, 2, 3, 4, 5]
+// console.log(doubles); // [2, 4, 6, 8, 10]
+
+// let numbers = [1, 2, undefined, 4, 5];
+
+// let doubles = numbers.map(function(number) {
+//     return number * 2;
+// })
+
+// let triplets = doubles.map((number) => number * 3)
+
+
+
+// console.log(numbers)
+// console.log(doubles)
+// console.log(triplets)
+
+// function add(a, b) {
+//     return a + b;
+// }
+
+// console.log(add(2, 3))
+// console.log(add(2, 3))
+
+// function randomNum() {
+//     return Math.floor(Math.random() * 100);
+// }
+
+// console.log(randomNum())
+// console.log(randomNum())
+
+// function addColor(car, color) {
+//     let newCar = Object.assign({}, car, {
+//         color: color
+//     })
+
+//     return newCar;
+// }
+
+// let sentra = {
+//     nombre: 'Sentra'
+// }
+
+// let golf = {
+//     nombre: 'Golf'
+// }
+// console.log(golf)
+// console.log(addColor(golf, 'blue'));
+// console.log(addColor(golf, 'blue'));
+// console.log(addColor(sentra, 'red'));
+// FUNCIONES PURAS E IMPURA
+// let cart = [{nombre: 'carrito'}]
+
+// function addItemToCart(item, quantity) {
+//     cart.push({
+//         item: item,
+//         quantity: quantity
+//     })
+// }
+
+// addItemToCart('bolsa1', 1)
+
+// console.log(cart)
+
+// addItemToCart('bolsa2', 1)
+
+// console.log(cart)
+
+// let cuadrado = function(number) {
+//     return number * number;
+// }
+
+// let cuadradoDeCuatro = cuadrado(4)
+
+// console.log(cuadradoDeCuatro)
+
+// HO functions
+
+// let numbers = [1, 2, 3, 4, 5];
+// let doubles = numbers.map(function(number) {
+// 	return number * 2;
+// });
+
+// console.log(numbers); // [1, 2, 3, 4, 5]
+// console.log(doubles); // [2, 4, 6, 8, 10]
+
+// let numerosPares = numbers.filter(function(number) {
+//     return number % 2 !== 0;
+// })
+
+// console.log(numerosPares)
+
+// let sum = numbers.reduce(function(acum, valorActual) {
+//     return acum + valorActual;
+// }, 0)
+
+// console.log(sum)
+
+// let gatos =[
+//     {nombre: 'zephir', color: 'blanco', price: '420' },
+//     {nombre: 'luna', color: 'negro', price: '140' },
+//     {nombre: 'yasmin', color: 'cafe', price: '60' },
+//     {nombre: 'Charls', color: 'Gold', price: '120' }
+// ]
+
+// // let precioTotal = gatos.reduce(function(totalPrecios, elem) {
+// //     return totalPrecios + Number(elem.price)
+// // }, 0)
+
+// // console.log(precioTotal)
+
+// let gatoNoNegro = gatos.filter(function(elem) {
+//     return elem.color !== 'negro'
+// })
+
+// let precioGatosNoNegro = gatoNoNegro.reduce(function(totalPrecios, elem) {
+//     return totalPrecios + Number(elem.price)
+// }, 0)
+
+
+// let precioGatosSinGatoNegro = gatos
+//     .filter(function(elem) {
+//         return elem.color !== 'negro'
+//     }) // array sin los gatos negros
+//     .reduce(function(totalPrecios, elem) {
+//         return totalPrecios + Number(elem.price)
+//     }, 0) // dinero que voya ganar por los gatos, sin incluir al gato negro
+
+// console.log('precio sin gato negro', precioGatosSinGatoNegro)
+
+// Numero de entrada 12345 suma de sus dígitos es 15
+
+// let number = prompt('que numero vas a sumar');
+
+// // let string = number.toString(); // '12345'
+
+// // let array = string.split('') 
+
+// let array = number.toString().split('');
+
+// console.log(array)
+
+// // let arrayOfNumbers = array.map(function(number) {
+// //     return Number(number);
+// // })
+
+// let arrayOfNumbers = array.map(Number)
+
+// console.log(arrayOfNumbers)
+
+// // let suma = arrayOfNumbers.reduce(function(total, num) {
+// //     return total + num;
+// // }, 0)
+
+// let suma = function(numero) {
+//     numero
+//         .toString()
+//         .split('')
+//         .map(Number)
+//         .reduce(function(total, num) {
+//             return total + num;
+//         }, 0)
+// }
+
+// console.log(suma)
+
+
+// function flatten(arrays) {
+//     return arrays.reduce( function (arrayFlaten, elem) {
+//         return arrayFlaten.concat(elem)
+//     }, [])
+// }
+
+// var arrays = [[1, 2, 3], [4, 5], [6], [8, 9, 10]];
+// var array = flatten(arrays);
+// console.log('string' + 1)
+// console.log(array); // [1, 2, 3, 4, 5, 6, 8, 9, 10]
+
+
+// function compact(array) {
+//     return array.filter(function(elem) {
+//         return !!elem
+//     })
+// }
+
+//   var array = [0, 1, false, 2, '', 3];
+//   var compactedArray = compact(array);
+
+//   console.log(compactedArray); // [1, 2, 3]
+
