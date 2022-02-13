@@ -1,0 +1,287 @@
+.body {
+    background-color: transparent;
+    margin: 0;
+}
+.ul  {
+    list-style: none;
+    padding-left: 0;
+}
+.ul li {
+    position: relative;
+    padding-left: 20px;
+    color: whitesmoke;
+}
+.ul li:before {
+    content: '';
+    width: 30px;
+    height: 29px;
+    position: absolute;
+    background-image: url('./Assets/user.jpeg');
+    background-size: cover;
+    background-position: center;
+    left: -18px;
+    top: 49%;
+    transform: translateY(-50%);
+}
+.navbar  {
+    list-style: none;
+    padding-left: 0;
+}
+.navbar li {
+    position: relative;
+    padding-left: 20px;
+    color: whitesmoke;
+}
+.navbar li:before {
+    content: '';
+    width: 30px;
+    height: 29px;
+    position: absolute;
+    background-image: url('./Assets/carrito.2.jpg');
+    background-size: cover;
+    background-position: center;
+    left: -18px;
+    top: 49%;
+    transform: translateY(-50%);
+}
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url(https://www.lacomer.com.mx/lacomer/assets/images/city/city-market.jpg);
+    z-index: 10;
+}
+.header {
+    margin: 40px 20px 0;
+    font-size: 0;
+    background-image: url(https://www.lacomer.com.mx/lacomer/assets/images/city/city-market.jpg);
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.header li {
+    display: inline;
+}
+.header > * {
+    display: inline-block;
+    font-size: 16px;
+}
+.header .logo {
+    width: 20%;
+}
+.header .barra {
+    width: 60%;
+}
+.header .navbar {
+    width: 10%;
+}
+.header .ul {
+    width: 10%
+}
+#busqueda {
+    border:1px solid #BABABA;
+    height:38px;
+    text-align: center;
+    padding-top: 10px;
+    width: 72%;
+    border-radius: 8px;
+  }
+input[type=“image”] {
+    color: #fff;
+    background-color: #BA0C2F;
+    border-color: #9C223A;
+    white-space: nowrap;
+    vertical-align: middle;
+    height: 37px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    margin-left: -5px;
+  }
+  .card-container {
+      margin: 0;
+      background-image: url(https://www.lacomer.com.mx/lacomer/assets/images/city/city-market.jpg);
+  }
+.carousel-inner .carousel-item active {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    top: 88px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+}
+.seción  {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 755px;
+    font-size: xx-large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.seción li {
+    position: relative;
+    padding-left: 15px;
+    color:whitesmoke;
+    display:inline-block;
+    vertical-align:bottom;
+    line-height: normal;
+}
+.seción li:before {
+    content: '';
+    width: 57px;
+    height: 57px;
+    position: absolute;
+    background-image: url('./Assets/paquete.png');
+    background-size: cover;
+    background-position: center;
+    left: -43px;
+    top: 53%;
+    transform: translateY(-50%);
+}
+.title {
+    background-image: url(https://www.lacomer.com.mx/lacomer/assets/images/city/city-market.jpg);
+    height: 71px;
+}
+#carrusel {
+    float:left;
+    width:600px;
+    overflow:hidden;
+    height:203px;
+    position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+#carrusel .left-arrow {
+    position:absolute;
+    left:10px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+#carrusel .right-arrow {
+    position:absolute;
+    right:10px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+.carrusel {
+    width:4000px;
+    left:0px;
+    position:absolute;
+    z-index:0;
+}
+.carrusel>div {
+    float: left;
+    margin-right: 5px;
+    width: 296px;
+}
+.carrusel img {
+    cursor: pointer;
+    height: 262px;
+    width: 296px;
+}
+.product {
+    border:#CCCCCC 1px solid;
+}
+.grupo {
+    margin-left: 556px;
+}
+.main {
+    height: 251px;
+    background-image: url(https://www.lacomer.com.mx/lacomer/assets/images/city/city-market.jpg);
+}
+.seción1  {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 755px;
+    font-size: xx-large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.seción1 li {
+    position: relative;
+    padding-left: 15px;
+    color:whitesmoke;
+    display:inline-block;
+    vertical-align:bottom;
+    line-height: normal;
+}
+.seción1 li:before {
+    content: '';
+    width: 57px;
+    height: 57px;
+    position: absolute;
+    background-image: url('./Assets/grafico-circular.png');
+    background-size: cover;
+    background-position: center;
+    left: -43px;
+    top: 53%;
+    transform: translateY(-50%);
+}
+.title1 {
+    background-image: url(https://www.lacomer.com.mx/lacomer/assets/images/city/city-market.jpg);
+    height: 71px;
+}
+.collage {
+    background-image: url(https://www.lacomer.com.mx/lacomer/assets/images/city/city-market.jpg);
+}
+.tz-gallery {
+    padding: 40px;
+}
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    height: 200px;
+}
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+.tz-gallery img {
+    border-radius: 4px;
+}
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+.container.gallery-container {
+ border-radius: 0;
+}
+@media(max-width: 425px) {
+    .ul,
+    .navbar {
+        display: none;
+    }
+    .seción,
+    .seción1 {
+        font-size: medium;
+        margin-left: 145px;
+    }
+    .seción li:before,
+    .seción1 li:before {
+        width: 30px;
+        height: 30px;
+        left: -19px;
+    }
+    .seción li {
+        margin-top: 10px;
+    }
+    .seción1 li {
+        margin-bottom: -50px;
+    }
+    .grupo {
+        margin-left: 69px;
+    }
+    #carrusel {
+        width: 298px;
+    }
+}

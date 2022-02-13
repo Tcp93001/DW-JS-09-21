@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Ejemplo 2: Cambiando el DOM</title>
+  </head>
+  <body>
+    <p>One</p>
+    <p>Two</p>
+    <p>Three</p>
+
+    <script>
+
+        let paragraphs = document.getElementsByTagName('p'); // one, two, three
+
+        console.log(paragraphs);
+
+        console.log('Primer nodo', paragraphs[0]) // one
+        console.log('Segundo nodo', paragraphs[1]) // two
+        console.log('Tercer nodo', paragraphs[2]) // three
+
+        document.body.insertBefore(paragraphs[2], paragraphs[0]) // three, one, two
+
+        paragraphs = document.getElementsByTagName('p'); // three, one, two
+
+        console.log(paragraphs);
+
+        console.log('Primer nodo 2 vuelta', paragraphs[0]) // three
+        console.log('Segundo nodo 2 vuelta', paragraphs[1]) // one
+        console.log('Tercer nodo 2 vuelta', paragraphs[2]) // two
+
+    </script>
+  </body>
+</html>

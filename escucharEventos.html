@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Ejemplo 1: Eventos en nodos del DOM</title>
+  </head>
+  <body>
+    <!-- <h1 id="title">Hello World</h1>
+
+    <button id="red">Red</button>
+    <button id="blue">Blue</button>
+    <button id="black">Black</button> -->
+
+    <button>Click here</button>
+
+    <script>
+
+    //   let title = document.getElementById('title')
+
+    //   let redButton = document.getElementById('red')
+    //   let blueButton = document.getElementById('blue')
+    //   let blackButton = document.getElementById('black')
+
+    //   redButton.addEventListener('click', function() {
+    //       title.style = 'color: red';
+    //   })
+    //   blueButton.addEventListener('click', function() {
+    //       title.style = 'color: blue';
+    //   })
+    //   blackButton.addEventListener('click', function() {
+    //       title.style = 'color: black';
+    //   })
+
+    let button = document.querySelector('button');
+
+    button.addEventListener('mousedown', function(event) {
+        if (event.button === 0) {
+            console.log('Left button')
+        } else if (event.button === 1) {
+            console.log('Middle button')
+        } else if (event.button === 2) {
+            console.log('Right button')
+        }
+    })
+
+    </script>
+  </body>
+</html>
